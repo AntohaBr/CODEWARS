@@ -1,0 +1,14 @@
+const flip = (d, a) => {
+  let array;
+  if(d === 'R') {
+    array = a.sort(function(a, b) {
+      return a - b;
+    });
+  } else {
+    array = a.sort(function(a, b) {
+      return b - a;
+    });
+  }
+
+  return array;
+}
