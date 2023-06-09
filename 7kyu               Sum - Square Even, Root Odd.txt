@@ -1,0 +1,7 @@
+const sumSquareEvenRootOdd = ns => {
+  const list = ns.map (num => {
+    return num %2 === 0 ? num ** 2 : Math.sqrt(num)
+  })
+  
+  return Number (list.reduce ((a, c) => a + c, 0).toFixed(2))
+};
